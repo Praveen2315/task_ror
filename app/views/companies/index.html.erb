@@ -1,0 +1,27 @@
+<p><%= notice %></p>
+
+<h1>listing company </h1>
+<%= link_to 'New Company', new_company_path %>
+<table>
+  <thead>
+     <tr>
+         <th>Company Name</th>
+         <th>Location</th>
+         <th>Technology</th>
+         
+         <th colspan="3">Actions</th>
+     </tr>
+   </thead>
+   <tbody>
+     <% @companies.each do |company| %>
+      <tr>
+        <td><%= company.name%></td>
+        <td><%= company.location %></td>
+        <td><%= company.technology %></td>
+
+        <td><%= link_to 'View' , company %></td>
+        <td><%= link_to 'Edit' , edit_company_path(company) %></td>
+        <td><%= link_to "Destroy", company, data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %></td> </tr> 
+      <% end %>
+    </tbody>
+</table> 

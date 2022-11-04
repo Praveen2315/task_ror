@@ -1,0 +1,9 @@
+
+<p><%= notice %></p>
+
+<h1> company detials</h1>
+   <p><strong> Name:</strong><%= @company.name %></p> 
+   <p><strong> location:</strong><%= @company.location %></p> 
+   <p><strong> technology:</strong><%= @company.technology %></p> 
+
+<%= link_to 'Back', companies_path %> | <%= link_to 'Edit' , edit_company_path(@company) %>

@@ -1,0 +1,11 @@
+
+<h1> Edit company</h1>
+   
+<div>
+<% companies.each do |company| %>
+  <%= company.display_name %>
+<% end %>
+</div>
+
+<%= render "form" %>
+  
