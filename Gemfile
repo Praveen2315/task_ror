@@ -25,8 +25,6 @@ gem 'devise'
 
 gem "administrate"
 
-gem 'devise'
-
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem "stimulus-rails"
 
